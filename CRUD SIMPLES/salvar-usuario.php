@@ -3,7 +3,7 @@ switch($_REQUEST["action"]){
   case 'cadastrar':
     $name = $_POST["name"];
     $email = $_POST["email"];
-    $password = $_POST["pass"];
+    $password = $_POST["password"];
     $birth = $_POST["birth"]; 
     $sql = "INSERT INTO usuarios (name, email, password, birth) VALUES ('{$name}', '{$email}', '{$password}', '{$birth}')";
     $res = $conn->query($sql); 
